@@ -13,7 +13,7 @@ export class convidadosController{
        criar(@Body() CriarConvidadoDto: CriarConvidadoDto){
         console.log('[PORTEIRO DIGITAL]novo convidado recebido: ${criarConvidadodto.nome');
         return{
-            mensagem: 'convidado 4{Criarconvidadodto.nome} adicionado com sucesso!',
+            mensagem: 'convidado $S{Criarconvidadodto.nome} adicionado com sucesso!',
             dados: CriarConvidadoDto,
         }
        
